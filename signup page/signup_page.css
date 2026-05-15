@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color-white:white;
+    --text-color-grey:rgb(183, 180, 180);
+}
+body{
+    background-color: black;
+}
+.container{
+    width: 35%;
+    height: 700px;
+    margin: 100px auto;
+    padding-bottom: 100px;
+    /* background-color: aqua; */
+    text-align: center;
+    color: var(--text-color-white);
+    font-family: "Roboto", sans-serif;
+}
+#email{
+    width: 100%;
+    height: 50px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--text-color-grey);
+    color: var(--text-color-white);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+#email::placeholder{
+    font-size: 16px;
+}
+.button{
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: rgb(62, 184, 62);
+    font-size: 18px;
+}
+button:hover{
+    background-color: rgb(80, 191, 80);
+}
+.box{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 1px solid var(--text-color-grey);
+}
+.box i,.box img{
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+}
+.box p{
+    text-align: center;
+}
+.box:hover{
+    transform: scale(1.05);
+}
+.fa-spotify{
+    font-size: 40px;
+}
+h1{
+    font-size: 50px;
+    font-family: "Archivo", sans-serif;
+    margin: 20px 0px 40px;
+}
+
+.box{
+    margin:10px 0px ;
+}
+label{
+    width: 35%;
+    display: flex;
+    justify-content: left;
+}
+.or{
+    margin: 10px;
+}
+.log{
+    margin: 50px;
+    line-height: 2;
+}
+.log p,small{
+    color: var(--text-color-grey);
+}
+.log a{
+    text-decoration: none;
+    color: white;
+}
+
+.log a:focus{
+    text-decoration: underline;
+}
+small span{
+    text-decoration: underline;
+}

@@ -1,0 +1,126 @@
+
+@media (max-width:768px) and (max-width:1024px){
+
+    nav{
+        gap:10px;
+        justify-content:space-between;
+        padding:0 15px;
+    }
+
+    nav .search_bar{
+        width:320px;
+    }
+
+    .aside_container{
+        width:30%;
+    }
+
+    main{
+        width:67%;
+        margin-left:32%;
+    }
+
+    .hit_box{
+        flex-direction:column;
+    }
+
+    .hit_box .hero{
+        width:100%;
+    }
+
+    .get_start .front_container{
+        width:300px;
+        height:220px;
+    }
+
+    .footer_mainbox{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .social_media{
+        margin-left:0;
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+
+    nav{
+        height:auto;
+        padding:15px;
+        gap:15px;
+        justify-content:center;
+    }
+
+    nav .home{
+        width:100%;
+        justify-content:center;
+    }
+
+    nav .search_bar{
+        margin-left: 20px;
+        width:250px;
+    }
+
+    /* nav .explore, */
+    /* nav .fa-bell,
+    nav .fa-arrows-down-to-people{
+        display:none;
+    } */
+
+    /* Sidebar */
+    .aside_container{
+        display: none;
+    }
+
+    /* Main */
+    main{
+        top:30vh;
+        position:relative;
+        width:100%;
+        margin:10px 0;
+        height:auto;
+    }
+
+    .view_page{
+        padding:20px;
+    }
+
+    .top_box{
+        flex-wrap:wrap;
+    }
+
+    .hit_box{
+        flex-direction:column;
+    }
+
+    .hit_box .hero{
+        width:100%;
+    }
+
+    /* Cards */
+    .get_start .front_container{
+        width:280px;
+        height:220px;
+        gap:15px;
+        padding-left:20px;
+    }
+
+    .get_start .front_container img{
+        width:80px;
+        height:180px;
+    }
+
+    /* Music cards */
+    main .img_box{
+        width:150px;
+    }
+
+    main .scroll_img img{
+        width:130px;
+        height:130px;
+    }
+
+}

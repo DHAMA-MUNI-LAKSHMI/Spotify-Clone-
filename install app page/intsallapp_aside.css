@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#424244;
+    --text-color:rgb(177, 171, 171);
+    --hover-bg-color:#6e6e70;
+}
+.aside_container{
+    margin: 11vh 10px 0px;
+    height: calc(87vh - 11vh);
+    width: 35%;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    position: fixed;
+    color: white;
+}
+.aside_container .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.create{
+    background-color: var(--hover-bg-color);
+    padding:10px 20px;
+    border-radius: 20px;
+}
+.create a{
+    color: white;
+    text-decoration: none;
+}
+.create a i{
+    color: var(--text-color);
+    padding-right: 2px;
+}
+.content{
+    height: 200px;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    margin: 30px 0px;
+}
+.content:hover{
+    scrollbar-width: auto;
+    scrollbar-color: grey transparent;
+}
+.content button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.content .playlist{
+    background-color: var(--hover-bg-color);
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2;
+    margin: 15px 10px;
+}
+.content .podcasts{
+    background-color: var(--hover-bg-color);
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2;
+    margin: 15px 10px;
+}
+aside .footer{
+    padding: 0px 15px 20px;
+    line-height: 1.5;
+}
+.footer small{
+    color: var(--text-color);
+    margin-right: 10px;
+}
+.footer+a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 15px;
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+footer{
+    position: fixed;
+    bottom:10px;
+    width: 98%;
+    height: 10vh;
+    color: white;
+    background:linear-gradient(to right, #af2896,#8c1eff,rgb(90, 185, 222));
+    left: 10px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+footer a button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+}

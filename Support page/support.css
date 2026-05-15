@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:rgb(18, 18, 18);
+    --text-color:rgb(177, 171, 171);
+    --hover-bg-color:#6e6e70;
+}
+body{
+    background-color: var(--bg-color);
+    font-family: "Roboto", sans-serif;
+}
+.large_screen_nav{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+nav .spotify i,footer .spotify i{
+    font-size: 35px;
+}
+nav .spotify span,footer .spotify span{
+    font-size: 25px;
+    font-family: "Archivo", sans-serif;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav .spotify,footer .spotify{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a button{
+    border: none;
+    padding: 15px 30px;
+    background-color: rgb(99, 231, 99);
+    font-weight: bold;
+    border-radius: 30px;
+}
+nav .box1{
+    width: 40%;
+    margin: 0px 0px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+}
+nav .box2{
+    width: 25%;
+    margin: 0px 40px 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 20px; */
+}
+nav .spotify:focus{
+    border: 2px solid white;
+}
+nav a:hover{
+    font-size: 18px;
+}
+nav a button:hover{
+    padding: 18px 33px;
+    border-radius: 33px;
+    background-color: rgb(131, 234, 131);
+}
+
+.small_screen_nav{
+     width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(11, 11, 11);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    padding: 3px 0px;
+    color:  var(--text-color);
+    font-family: "Roboto", sans-serif;
+    z-index: 0;
+}
+
+.dropdown-parent {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  margin:0px  10px 0px 0px;
+}
+
+/* Hidden and floating outside standard page layout flow */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  right: 0px;
+  /* left: 200px; */
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1; /* Sits on top of other content */
+}
+
+/* Makes links inside stack cleanly */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change link backgrounds on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* THE HOVER CONCEPT: Show the dropdown menu when hovering over the parent */
+.dropdown-parent:hover .dropdown-content {
+  display: block;
+}
+.search_bar_min{
+    display: flex;
+    height: 40px;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid var(--hover-bg-color);
+    color: whitesmoke;
+}
+/* Spotify Support */
+main{
+    margin-top: 10vh;
+    color: white;
+}
+main .spotify_support{
+    width: 600px;
+    margin: 100px auto 10px;
+}
+main .search_ai{
+    display: flex;
+    width: 210px;
+    margin: 10px auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    border: 3px solid skyblue;
+    /* border-color: linear-gradient(to right, #af2896,#8c1eff,rgb(90, 185, 222)); */
+    border-radius: 30px;
+    background-color: var(--hover-bg-color);
+    color: white;
+}
+
+
+main .search_ai input{
+    outline: none;
+    border: none;
+    background:var(--hover-bg-color);
+}
+main .search_ai input::placeholder{
+    color: white;
+}
+main .search_ai p{
+    color: var(--text-color);
+}
+main h1{
+    font-size: 70px;
+    font-family: "Archivo", sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+main .search_box{
+    width: 600px;
+    height: 130px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 10px;
+    box-shadow: -10px -10px 20px 8px lightgreen;
+}
+
+

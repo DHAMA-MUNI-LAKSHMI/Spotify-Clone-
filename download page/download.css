@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#424244;
+    --text-color:rgb(177, 171, 171);
+    --hover-bg-color:#6e6e70;
+    --green-color:rgb(15, 232, 15);
+    --spotify-font-family:font-family: SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva;
+}
+/* nav bar */
+body{
+    font-family: "Roboto", sans-serif;
+}
+/* large screen nav */
+.large_screen_nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(11, 11, 11);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    flex: 1;
+    padding: 3px 0px;
+    color:  var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 99;
+    opacity: 1;
+}
+nav .home{
+    width: 100px;
+}
+nav .spotify i{
+    font-size: 25px;
+}
+nav .spotify span{
+    font-size: 16px;
+    font-family: "Archivo", sans-serif;
+}
+nav .spotify{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav .product_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 250px;
+    width: 400px;
+    height: 30px;
+    border-right: 2px solid rgb(140, 138, 138);
+    color: var(--text-color);
+    padding: 0px 20px 0px 0px;
+}
+nav .log{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    height: 30px;
+    /* margin-right: 20px; */
+    /* padding: 0px 20px; */
+}
+nav .bg:hover{
+    /* transition: scale(1.5,1.5); */
+    font-size: 21px;
+    background-color: var(--hover-bg-color);
+}
+/* nav .product_box a:hover,nav .product_box~a:hover, nav .log a:hover{
+    color: var(--green-color);
+} */
+/* small screen nav*/
+.small_screen_nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(11, 11, 11);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    padding: 3px 0px;
+    color:  var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 0;
+    opacity: 0;
+}
+
+.dropdown-parent {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  margin:0px  10px 0px 0px;
+}
+
+/* Hidden and floating outside standard page layout flow */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  right: 0px;
+  /* left: 200px; */
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1; /* Sits on top of other content */
+}
+
+/* Makes links inside stack cleanly */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change link backgrounds on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* THE HOVER CONCEPT: Show the dropdown menu when hovering over the parent */
+.dropdown-parent:hover .dropdown-content {
+  display: block;
+}
+
+/* main */
+main .image_container{
+    height: calc(100vh - 20vh);
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    margin-top: 10vh;
+   
+}
+main .bg_img{
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* margin-top: 20vh; */
+    background: url("./advertice.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+main .bg_img h1{
+    font-size: 50px;
+}
+main .bg_img p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*main app_allows */
+
+main .app_allows{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+}
+main .app_allows h2{
+    font-size: 32px;
+}
+main .app_allows p{
+    margin-bottom: 20px;
+}
+main .img_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+main .img_row img{
+    height: 40px;
+    width: 120px;
+}
+
+/* main listen */
+
+main .listen{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    line-height: 2;
+    background: url("./star_eyes.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+    color: wheat;
+    font-weight: bold;
+}
+main .listen h2{
+    font-size: 32px;
+}
+main .listen_row a{
+    color: white;
+    text-decoration: none;
+}
+main .listen_row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+main .listen_row a:hover{
+    color: var(--green-color);
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+}
+
+footer .spotify{
+    /* margin-top: -250px; */
+    /* margin-left: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px 30px; */
+    text-decoration: none;
+    color: white;
+    width: 130px;
+}
+footer .spotify i{
+    font-size: 25px;
+}
+footer .spotify span{
+    font-size: 16px;
+    font-family: "Archivo", sans-serif;
+}
+footer .footer_content{
+    padding: 40px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:   20px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+footer .footer_content small{
+    color:var(--text-color);
+}
+footer .footer_content p{
+    color: var(--text-color);
+    margin: 25px 0px;
+    color: white;
+}
+footer .social_media{
+    margin: 5px 0px 0px 40px;
+    color: white;
+    display: flex;
+}
+footer .social_media i{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: var(--hover-bg-color);
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+}
+footer .social_media a i:hover{
+    border: 1px solid white;
+}
+footer .faces{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap:30px;
+    padding: 20px;
+}
+footer .faces .box{
+    width: 100px;
+}
+footer .last_content{
+    /* height: 70px;
+    width: 200px; */
+    /* margin: 30px 20px 0px; */
+    color: var(--text-color);
+    /* background-color: black; */
+    
+}
+footer .last_content .circle_c{
+    font-size: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    padding: 1px 3px;
+    text-align: center;
+    border: 1px solid var(--text-color);
+}
+/* hr{
+    color: var(--text-color);
+} */
+footer .set{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px 0px 20px;
+    color: var(--text-color);
+    width: 100%;
+}
+footer .set .terms{
+    /* width: 550px; */
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+footer .set .lang{
+    /* width: 400px; */
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+footer .terms p:hover, footer p:hover, footer .set .lang .english:hover{
+    color: var(--green-color);
+}

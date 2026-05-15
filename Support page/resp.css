@@ -1,0 +1,224 @@
+
+@media (max-width:575.98px){
+
+    .small_screen_nav{
+        z-index: 999;
+        opacity: 1;
+    }
+    .large_screen_nav{
+        z-index: 0;
+        opacity: 0;
+    }
+
+    main{
+        margin-top: 27vh;
+    }
+    main .spotify_support,
+    .articles,
+    .help{
+        width:95%;
+        margin:80px auto 30px;
+    }
+
+    main h1{
+        font-size:40px;
+    }
+
+    main .search_box{
+        width:100%;
+        height:auto;
+    }
+
+    .community{
+        padding:30px 20px;
+    }
+
+    .community h2{
+        font-size:35px;
+    }
+
+    footer .footer_content{
+        width:100%;
+        grid-template-columns:1fr;
+        gap:30px;
+        text-align:left;
+        margin: 10px;
+    }
+    footer .faces{
+        grid-template-columns:1fr;
+        gap:30px;
+        text-align:left;
+        /* margin: 10px; */
+    }
+    footer .spotify{
+        margin:0;
+        justify-content:left;
+    }
+
+    footer .social_media{
+        justify-content:left;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    footer .last_content{
+        margin:20px auto;
+        text-align:center;
+    }
+}
+
+
+@media (min-width:576px) and (max-width:767.98px){
+
+    .small_screen_nav{
+        z-index: 999;
+        opacity: 1;
+    }
+    .large_screen_nav{
+        z-index: 0;
+        opacity: 0;
+    }    
+
+    main .spotify_support,
+    .articles,
+    .help{
+        width:95%;
+    }
+
+    main h1{
+        font-size:55px;
+    }
+
+    main .search_box{
+        width:100%;
+    }
+
+    footer .footer_content{
+        width:100%;
+        grid-template-columns:repeat(3,1fr);
+        gap:30px;
+    }
+
+    footer .spotify{
+        margin:0;
+    }
+    
+}
+
+
+@media (min-width:768px) and (max-width:991.98px){
+
+    .small_screen_nav{
+        z-index: 0;
+        opacity: 0;
+    }
+    .large_screen_nav{
+        z-index: 999;
+        opacity: 1;
+    }
+    main{
+        margin-top: 13vh;
+    }
+    main .spotify_support,
+    .articles,
+    .help{
+        width:90%;
+    }
+
+    main .search_box{
+        width:100%;
+    }
+
+    footer .footer_content{
+        width:100%;
+        grid-template-columns:repeat(1,1fr);
+        gap:30px;
+    }
+    
+    footer .spotify{
+        width: 130px;
+        margin:0;
+        text-align: left;
+        display: flex;
+    }
+    footer .social_media{
+        margin-left: 0;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1199.98px){
+
+    .small_screen_nav{
+        z-index: 0;
+        opacity: 0;
+    }
+    .large_screen_nav{
+        z-index: 999;
+        opacity: 1;
+    }
+
+    main .spotify_support,
+    .articles,
+    .help{
+        width:700px;
+    }
+
+    main .search_box{
+        width:100%;
+    }
+
+    footer .footer_content{
+        width:100%;
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    footer .spotify{
+        margin: 10px 10px;
+    }
+    footer .faces{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px;
+    padding: 20px;
+    }
+}
+
+
+
+@media (min-width:1200px) and (max-width:1399.98px){
+
+    .small_screen_nav{
+        z-index: 0;
+        opacity: 0;
+    }
+    .large_screen_nav{
+        z-index: 999;
+        opacity: 1;
+    }
+
+    main .spotify_support,
+    .articles,
+    .help,main .search_box{
+        width:700px;
+    }
+
+    footer .footer_content{
+        width:100%;
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    footer .spotify{
+        margin-top:-230px;
+        margin-left:0;
+    }
+    footer .spotify{
+        margin: 10px 10px;
+    }
+    footer .faces{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px;
+    padding: 20px;
+    }
+}

@@ -1,0 +1,429 @@
+
+@media screen and (max-width:1024px){
+
+    nav{
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    nav .search_bar{
+        margin-right: 0;
+    }
+    
+    nav .search_bar:hover{
+        width: 220px;
+    }
+
+    nav .home,
+    nav .product_box{
+        width: 250px;
+        gap: 15px;
+    }
+
+    .aside_container{
+        width: 29%;
+    }
+
+    main{
+        width: 68%;
+        margin-left: 31%;
+    }
+
+    .footer_content{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:768px){
+
+    nav{
+        height: auto;
+        padding: 10px;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    nav .search_bar{
+        margin-right: 0;
+        order: 3;
+    }
+
+    nav .search_bar:hover{
+        width: 180px;
+    }
+
+    nav .home{
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav .product_box{
+        width: 100%;
+        justify-content: center;
+        border-right: none;
+        gap: 10px;
+    }
+
+    .aside_container{
+        position: relative;
+        width: calc(100% - 20px);
+        height: auto;
+        margin: 120px 10px 15px;
+    }
+
+    main{
+        position: relative;
+        width: calc(100% - 20px);
+        margin: 0 10px 20px;
+        height: auto;
+        min-height: auto;
+    }
+
+    .content{
+        height: auto;
+        max-height: 250px;
+    }
+
+    .footer_mainbox{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer_content{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .social_media{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    footer{
+        position: relative;
+        width: calc(100% - 20px);
+        height: auto;
+        left: 10px;
+        bottom: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width:480px){
+
+    nav .home,
+    nav .product_box{
+        display: none;
+    }
+
+    nav .search_bar:hover{
+        width: 150px;
+    }
+
+    nav #search{
+        width: 90px;
+    }
+    nav{
+        height: 10vh;
+    }
+    .aside_container{
+       height:  calc(87vh - 11vh);
+       overflow: scroll;
+       scrollbar-width: none;
+    }
+    main{
+        margin-top: 20px;
+    }
+    .aside_container .head,
+    main .head{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .create{
+        width: 100%;
+        text-align: center;
+    }
+
+    .content button{
+        width: 100%;
+    }
+
+    main .box{
+        margin: 15px 10px;
+    }
+
+    main .img_box{
+        width: 130px;
+    }
+
+    main .scroll_img img,
+    main .box2 img{
+        width: 110px;
+        height: 110px;
+    }
+
+    .footer_content{
+        grid-template-columns: 1fr;
+    }
+
+    .social_media{
+        justify-content: center;
+    }
+
+    footer{
+        font-size: 13px;
+    }
+
+    footer a button{
+        width: 100%;
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1399px){
+
+    .cover{
+        width:170px;
+        height:170px;
+    }
+
+    .info h1{
+        font-size:60px;
+    }
+
+    .controls{
+        gap:20px;
+    }
+
+    .icon{
+        font-size:25px;
+    }
+
+    th,
+    td{
+        font-size:14px;
+    }
+
+}
+
+
+@media (min-width:992px) and (max-width:1199px){
+
+    .header{
+        gap:20px;
+        padding:25px;
+    }
+
+    .cover{
+        width:150px;
+        height:150px;
+    }
+
+    .info h1{
+        font-size:50px;
+    }
+
+    .details{
+        flex-wrap:wrap;
+        font-size:13px;
+    }
+
+    .controls{
+        padding:20px;
+        gap:20px;
+    }
+
+    .play-btn{
+        width:55px;
+        height:55px;
+    }
+
+    .icon{
+        font-size:23px;
+    }
+
+    .song img{
+        width:40px;
+        height:40px;
+    }
+
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+
+    .header{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:20px;
+    }
+
+    .cover{
+        width:170px;
+        height:170px;
+    }
+
+    .info h1{
+        font-size:45px;
+    }
+
+    .details{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .controls{
+        justify-content:center;
+        gap:20px;
+        flex-wrap:wrap;
+    }
+
+    .table_container{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:700px;
+    }
+
+}
+
+
+@media (min-width:576px) and (max-width:767px){
+
+    .header{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:20px;
+    }
+
+    .cover{
+        width:150px;
+        height:150px;
+    }
+
+    .info h1{
+        font-size:38px;
+    }
+
+    .details{
+        justify-content:center;
+        flex-wrap:wrap;
+        font-size:12px;
+    }
+
+    .controls{
+        justify-content:center;
+        gap:15px;
+        flex-wrap:wrap;
+    }
+
+    .play-btn{
+        width:50px;
+        height:50px;
+        font-size:18px;
+    }
+
+    .icon{
+        font-size:20px;
+    }
+
+    .table_container{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:650px;
+    }
+
+    .song h3{
+        font-size:14px;
+    }
+
+    .song p{
+        font-size:12px;
+    }
+
+}
+
+@media (max-width:575px){
+
+    .header{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:15px;
+        gap:15px;
+    }
+
+    .cover{
+        width:130px;
+        height:130px;
+    }
+
+    .info p{
+        font-size:12px;
+    }
+
+    .info h1{
+        font-size:30px;
+    }
+
+    .details{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:5px;
+        font-size:11px;
+    }
+
+    .controls{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px;
+        padding:15px;
+    }
+
+    .play-btn{
+        width:45px;
+        height:45px;
+        font-size:16px;
+    }
+
+    .icon{
+        font-size:18px;
+    }
+
+    .table_container{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:600px;
+    }
+
+    .song img{
+        width:35px;
+        height:35px;
+    }
+
+    .song h3{
+        font-size:13px;
+    }
+
+    .song p{
+        font-size:11px;
+    }
+
+}

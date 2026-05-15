@@ -1,0 +1,201 @@
+
+@media (min-width:1200px) and (max-width:1399.98px){
+
+    .popup{
+        width:760px;
+    }
+
+    .right h1{
+        font-size:52px;
+    }
+
+    .song{
+        margin:10px 120px;
+    }
+}
+
+
+
+@media (min-width:992px) and (max-width:1199.98px){
+
+    .popup{
+        width:90%;
+        height:auto;
+        padding-bottom:30px;
+    }
+
+    .movie{
+        gap:40px;
+    }
+
+    .image-box{
+        width:260px;
+        height:260px;
+    }
+
+    .right h1{
+        font-size:48px;
+    }
+
+    .song{
+        margin:20px 80px;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:991.98px){
+
+    .popup{
+        width:95%;
+        height:auto;
+        padding-bottom:30px;
+    }
+
+    .movie{
+        flex-direction:column;
+        gap:30px;
+        text-align:center;
+    }
+
+    .image-box{
+        width:250px;
+        height:250px;
+    }
+
+    .right h1{
+        font-size:42px;
+    }
+
+    .right p{
+        font-size:16px;
+        max-width:90%;
+    }
+
+    .song{
+        margin:20px;
+        justify-content:center;
+        align-items: center;
+        /* flex-wrap:hidden; */
+        gap:20px;
+    }
+
+    .song img{
+        width:100px;
+        height:100px;
+    }
+}
+
+
+
+@media (min-width:576px) and (max-width:767.98px){
+
+    .popup{
+        width:95%;
+        height:auto;
+        padding-bottom:25px;
+    }
+
+    .movie{
+        flex-direction:column;
+        gap:25px;
+        padding:25px;
+        text-align:center;
+    }
+
+    .image-box{
+        width:220px;
+        height:220px;
+    }
+
+    .right h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .right p{
+        font-size:15px;
+        max-width:100%;
+    }
+
+    .song{
+        margin:15px;
+        gap:15px;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .song img{
+        width:140px;
+        height:auto;
+    }
+
+    .signup-btn{
+        width:150px;
+        height:45px;
+        font-size:16px;
+    }
+}
+
+
+
+@media (max-width:575.98px){
+
+    body{
+        padding:10px;
+    }
+
+    .popup{
+        width:100%;
+        height:auto;
+        padding-bottom:20px;
+    }
+
+    .movie{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+        text-align:center;
+    }
+
+    .image-box{
+        width:180px;
+        height:180px;
+        box-shadow:4px 4px 10px 4px pink;
+    }
+
+    .right h1{
+        font-size:28px;
+        line-height:1.2;
+    }
+
+    .right p{
+        font-size:14px;
+        line-height:1.6;
+        max-width:100%;
+    }
+
+    .song{
+        margin:10px;
+        gap:10px;
+        justify-content:center;
+        flex-wrap:hidden;
+    }
+
+    .song img{
+        width:50px;
+        height:50px;
+    }
+
+    .signup-btn{
+        width:140px;
+        height:42px;
+        font-size:15px;
+    }
+
+    .close-btn{
+        font-size:18px;
+    }
+}

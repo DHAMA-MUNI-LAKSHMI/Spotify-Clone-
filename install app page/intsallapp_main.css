@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#424244;
+    --text-color:rgb(177, 171, 171);
+    --hover-bg-color:#6e6e70;
+}
+main{
+    margin: 11vh 10px 0px 37%;
+    height: calc(87vh - 11vh);
+    width: 62%;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    position: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scrollbar-width: none;
+}
+main:hover{
+    scrollbar-width: auto;
+    scrollbar-color: grey transparent;
+}
+main .outer_box{
+    background: linear-gradient(#74B495 ,#F0ADC3);
+}
+main .inner_box{
+    background: linear-gradient(to top, #74B495 ,#F0ADC3);
+    margin: 40px auto;
+    padding: 30px 40px;
+    color: black;
+    width: 550px;
+}
+main .spotify i{
+    font-size: 30px;
+}
+main .spotify span{
+    font-size: 20px;
+    font-family: "Archivo", sans-serif;
+    font-weight: bold;
+}
+main .spotify{
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+main .spotify, main h1, main .inner_box p{
+    padding-bottom: 30px;
+}
+main .inner_box .img1{
+    padding-bottom: 20px;
+}
+main .inner_box .img2{
+    padding: 30px 0px;
+}
+main .footer_mainbox{
+    margin: 20px 0px 20px 20px;
+    padding:25px 5px;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    display: flex;
+
+}
+main .footer_content{
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    line-height: 1.2;
+}
+main .footer_content h4{
+    color: white;
+    padding-bottom: 10px;
+}
+main .footer_content p{
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+main .social_media{
+    margin: 5px 0px 0px auto;
+    color: white;
+}
+main .social_media i{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: var(--hover-bg-color);
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+}
+main .social_media a i:hover{
+    border: 1px solid white;
+}
+main .last_content{
+    margin: 30px 20px;
+    color: var(--text-color);
+}
+main .last_content .circle_c{
+    font-size: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    padding: 1px 2px;
+    text-align: center;
+    border: 1px solid var(--text-color);
+}

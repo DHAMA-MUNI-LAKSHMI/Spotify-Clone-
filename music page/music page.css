@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* audio::-webkit-media-controls-panel{
+    background-color:blue;
+    opacity: 0.5;
+    color: #1ed760;
+} */
+/* audio::-webkit-media-controls-play-button{
+    background-color:blue;
+    opacity: 0.7;
+    border-radius: 50%;
+} */
+
+
+body{
+    /* min-height:100vh; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+}
+
+/* Dark overlay */
+.overlay{
+    width:100%;
+    /* height:100vh; */
+    background:rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Main popup */
+.popup{
+    width:810px;
+    height:800px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #4b0082, #8a2be2, #000080);
+    border-radius:10px;
+    
+}
+
+.movie{
+    border-radius:10px;
+    display:flex;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items:center;
+    justify-content:center;
+    gap:65px;
+    padding:40px;
+}
+
+/* Left image */
+.image-box{
+    width:300px;
+    height:300px;
+    /* background:white; */
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:8px 8px 20px 10px pink;
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+/* Right content */
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    /* text-align:center; */
+    /* padding:50px auto; */
+}
+
+.right h1{
+    line-height:1.4;
+    font-weight:700;
+    margin-bottom:28px;
+    /* color: black; */
+    font-size:60px;
+    font-weight:bold;
+    margin-bottom:15px;
+    text-shadow:5px 5px #000;
+}
+.right p{
+    font-weight: bold;
+    /* font-family: italic; */
+    font-size:18px;
+    line-height:1.8;
+    max-width:500px;
+    color: rgb(225, 245, 4);
+    text-shadow: 2px 2px black;
+}
+.song{
+    margin: 10px 200px;
+    display: flex;
+    gap: 30px;
+}
+.song img{
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px 6px rgb(225, 101, 225);
+}
+/* Green Spotify button */
+.signup-btn{
+    width:165px;
+    height:48px;
+    border:none;
+    border-radius:30px;
+    background:#1ed760;
+    color:#000;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+    margin-bottom:16px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Download button */
+
+
+
+
+.close-btn{
+    margin-top:18px;
+    background:none;
+    border:none;
+    color:white;
+    font-size:22px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+a button:hover{
+    transform: scaleX(1.1);
+}
